@@ -1,0 +1,71 @@
+button {
+  all: unset;
+  width: 100px;
+  height: 40px;
+  background-color: #05402b;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0px 0px 3px 0px #756e8c;
+}
+
+button:nth-child(2) {
+  background-color: #a00628;
+}
+button:hover {
+  background-color: transparent;
+}
+
+.check-age {
+  min-width: 200px;
+  width: 600px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 0px #ffffff91;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: #010905;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.check-age-box {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #01080ee0;
+  height: 100vh;
+  max-width: 1400px;
+}
+
+.check-age > h1 {
+  line-height: 35px;
+  margin: 0 0 10px 0;
+}
+
+.check-age > p {
+  margin: 0 0 20px 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .check-age > h1 {
+    font-size: 22px;
+  }
+
+  .check-age > p {
+    font-size: 16px;
+  }
+
+  .check-age > .buttons {
+    gap: 5%;
+  }
+
+  .check-age {
+    width: 80%;
+  }
+}

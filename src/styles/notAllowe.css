@@ -1,0 +1,16 @@
+.not-allowd > h1 {
+  text-align: center;
+  min-width: 300px;
+  max-width: 900px;
+}
+
+.not-allowd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 5% 0 5%;
+}
+
+.not-allowd > span {
+  height: 30px;
+}

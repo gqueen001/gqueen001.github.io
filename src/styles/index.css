@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+  color: #ddeed4;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: #010905;
+  max-width: 1320px;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}

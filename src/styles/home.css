@@ -1,0 +1,252 @@
+.home1 {
+  width: 100%;
+  height: 610px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-image: linear-gradient(150deg, transparent, transparent, #061301);
+  position: relative;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.home1 > img {
+  position: absolute;
+  right: 0;
+}
+
+.text {
+  margin: 0 0 0 30px;
+  width: 50%;
+}
+
+.home2 {
+  background-image: linear-gradient(0deg, #0b1d03, #dbceb200);
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.animal1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 250px;
+}
+
+.animal2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 250px;
+}
+.animal3 {
+  position: absolute;
+  height: 250px;
+  bottom: 0;
+  left: 15%;
+}
+
+.animal4 {
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  height: 250px;
+}
+
+.animal5 {
+  height: 250px;
+  position: absolute;
+  right: 35%;
+  bottom: 0;
+}
+
+.text-box {
+  min-width: 340px;
+  width: 60%;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 150px 0 0 0;
+}
+
+.home3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home3 > img {
+  height: 350px;
+}
+
+.home3 > button {
+  all: unset;
+  height: 70px;
+  background-color: #05402b;
+  width: 250px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0px 0px 2px 0px #ffffff91;
+}
+
+.home3 > button:hover {
+  background-color: #95bccc24;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info-age > img {
+  height: 300px;
+}
+
+.info-age {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2%;
+  justify-content: center;
+}
+
+.info-age > div {
+  height: 270px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 0px #ff6858;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.info-age > div > h4 {
+  font-size: 18px;
+}
+
+.info-age > div > p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .info-age {
+    grid-template-columns: auto auto;
+  }
+  .text {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .animal4 {
+    z-index: 1;
+  }
+
+  .animal5 {
+    right: 30%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .text {
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .animal5 {
+    display: none;
+  }
+
+  .animal3 {
+    left: 18%;
+  }
+
+  .animal4 {
+    right: 18%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .animal3 {
+    display: none;
+  }
+
+  .text-box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .info-age {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .text {
+    width: 90%;
+    bottom: initial;
+  }
+
+  .home1 > img {
+    filter: blur(2px);
+  }
+
+  .animal3 {
+    display: none;
+  }
+
+  .home3 > img {
+    height: 250px;
+  }
+
+  .home3 > button {
+    height: 60px;
+    width: 200px;
+  }
+
+  .home2 {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .animal4 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .animal1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home3 > img {
+    width: 50%;
+    height: auto;
+  }
+
+  .home3 > button {
+    width: 130px;
+  }
+}
